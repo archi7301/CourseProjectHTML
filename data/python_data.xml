@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PythonVideos>
+
+    <Section title="Основы Python">
+        <Video>../videos/04.01 Самое важное в Python.mp4</Video>
+        <Video>../videos/09.01 Переменные.mp4</Video>
+        <Video>../videos/10.02 Типы и структуры данных.mp4</Video>
+    </Section>
+
+    <Section title="Функции и практика">
+        <Video>../videos/07.01 Практика - Объявление функции, параметры и аргументы.mp4</Video>
+        <Video>../videos/10.05 Практика - Встроенная функция id и объекты.mp4</Video>
+        <Video>../videos/22.06 ЗАДАЧА - Функции.mp4</Video>
+    </Section>
+
+    <Section title="ООП и декораторы">
+        <Video>../videos/40.01 Объекты и классы.mp4</Video>
+        <Video>../videos/41.02 Наследование из других классов.mp4</Video>
+        <Video>../videos/42.01 Введение в декораторы.mp4</Video>
+    </Section>
+
+</PythonVideos>

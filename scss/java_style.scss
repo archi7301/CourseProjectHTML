@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Anonymous+Pro:wght@400;700&display=swap");
+
+// --------------------
+// Переменные
+// --------------------
+$white: #fff;
+$gray-1: #ccc;
+$gray-2: #aaa;
+$gray-3: #666;
+
+$dark-1: #111;
+$dark-2: #333;
+
+$java-glow: rgba(255, 0, 43, 0.85);
+
+// --------------------
+// Миксины
+// --------------------
+@mixin fade($time: 0.6s) {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity $time ease, transform $time ease, box-shadow 0.3s ease;
+}
+
+// --------------------
+// Основные стили
+// --------------------
+body {
+    position: relative;
+    background: url("../images/bg.jpg") center/cover fixed no-repeat;
+    min-height: 100vh;
+    padding-top: 45px;
+
+    &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+    }
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: $white;
+    text-align: center;
+    margin: 60px 0 45px;
+    text-shadow: 0 2px 6px rgba($white, 0.45);
+}
+
+// --------------------
+// Карточки
+// --------------------
+.card {
+    @include fade();
+
+    &.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px $java-glow;
+    }
+}
+
+// --------------------
+// Информационный блок
+// --------------------
+.info-box {
+    margin: 60px auto 80px;
+    padding: 20px 25px;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    text-align: center;
+    color: #eee;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    backdrop-filter: blur(4px);
+}
+
+// --------------------
+// Маленькие карточки
+// --------------------
+.card-small {
+    .card-img-top {
+        width: 100%;
+        object-fit: contain;
+        background-color: #000;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    .card-footer {
+        background-color: $dark-1;
+        border-top: 1px solid $dark-2;
+    }
+}
+
+// --------------------
+// Логотип
+// --------------------
+.logo-section {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.center-logo {
+    width: 100%;
+    max-width: 635px;
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease, filter 0.5s ease;
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    &:hover {
+        filter: drop-shadow(0 0 14px rgba(77, 166, 255, 0.7));
+        transform: scale(1.05);
+    }
+}
+
+// --------------------
+// Footer
+// --------------------
+.footer-dark {
+    background-color: #0d0d0d;
+    color: $gray-1;
+    border-top: 1px solid #222;
+
+    .footer-links {
+        font-size: 1.05rem;
+    }
+
+    .footer-link {
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+
+        &:hover {
+            color: $white;
+            text-shadow: 0 0 6px rgba($white, 0.6);
+        }
+    }
+
+    .separator {
+        margin: 0 8px;
+        color: #555;
+    }
+
+    .footer-email {
+        color: $gray-2;
+        font-size: 0.95rem;
+    }
+
+    .footer-copy {
+        color: $gray-3;
+        font-size: 0.9rem;
+    }
+}

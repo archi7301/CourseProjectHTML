@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Anonymous+Pro:wght@400;700&display=swap");
+
+body {
+  position: relative;
+  background: url("../images/bg.jpg") center/cover fixed no-repeat;
+  min-height: 100vh;
+  padding-top: 45px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  margin: 60px 0 45px;
+  text-shadow: 0 2px 6px rgba(255, 255, 255, 0.45);
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover svg {
+  transform: scale(1.15);
+}
+
+.card svg {
+  transition: transform 0.3s ease;
+}
+
+.card-small {
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-small img {
+  height: 340px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.card-small .card-body {
+  padding: 15px;
+}
+
+.card-small .card-title {
+  font-size: 1.2rem;
+}
+
+.card-small .card-text {
+  font-size: 0.95rem;
+}
+
+.card-small .card-footer {
+  background-color: #111;
+  border-top: 1px solid #333;
+}
+
+.big-tech-logo {
+  width: 240px;
+  opacity: 0;
+  transform: scale(0.85) translateY(15px);
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.4s ease;
+}
+
+.big-tech-logo.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.big-tech-logo.meta:hover {
+  filter: drop-shadow(0 0 14px rgba(0, 150, 255, 0.7));
+  transform: scale(1.15) rotate(-2deg);
+}
+
+.big-tech-logo.apple:hover {
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.9));
+  transform: scale(1.15) rotate(-2deg);
+}
+
+.big-tech-logo.amazon:hover {
+  filter: drop-shadow(0 0 14px rgba(255, 153, 0, 0.8));
+  transform: scale(1.15);
+}
+
+.big-tech-logo.netflix:hover {
+  filter: drop-shadow(0 0 16px rgba(255, 0, 0, 0.8));
+  transform: scale(1.15) rotate(2deg);
+}
+
+.big-tech-logo.google:hover {
+  filter:
+    drop-shadow(0 0 10px rgba(66, 133, 244, 0.4)) drop-shadow(0 0 10px rgba(234, 67, 53, 0.4)) drop-shadow(0 0 10px rgba(251, 188, 5, 0.4)) drop-shadow(0 0 10px rgba(52, 168, 83, 0.4));
+  transform: scale(1.15) rotate(2deg);
+}
+
+
+.logo-section {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.center-logo {
+  width: 100%;
+  max-width: 350px;
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.5s ease;
+}
+
+.center-logo.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.center-logo:hover {
+  filter: drop-shadow(0 0 14px rgba(77, 166, 255, 0.7));
+  transform: scale(1.05);
+}
+
+.footer-dark {
+  background-color: #0d0d0d;
+  color: #ccc;
+  border-top: 1px solid #222;
+}
+
+.footer-dark .footer-links {
+  font-size: 1.05rem;
+}
+
+.footer-dark .footer-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-dark .footer-link:hover {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.footer-dark .separator {
+  margin: 0 8px;
+  color: #555;
+}
+
+.footer-dark .footer-email {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.footer-dark .footer-copy {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=index_style.css.map */

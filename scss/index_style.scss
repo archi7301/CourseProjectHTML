@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Anonymous+Pro:wght@400;700&display=swap");
+
+// --------------------
+// Переменные
+// --------------------
+$white: #fff;
+$gray-1: #ccc;
+$gray-2: #aaa;
+$gray-3: #666;
+$dark-1: #111;
+$dark-2: #333;
+
+// --------------------
+// Миксины
+// --------------------
+@mixin fade($time: 0.8s) {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity $time ease, transform $time ease;
+}
+
+@mixin logo-hover($shadow, $rotate: 0deg) {
+  filter: drop-shadow($shadow);
+  transform: scale(1.15) rotate($rotate);
+}
+
+// --------------------
+// Основные стили
+// --------------------
+body {
+  position: relative;
+  background: url("../images/bg.jpg") center/cover fixed no-repeat;
+  min-height: 100vh;
+  padding-top: 45px;
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+  }
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: $white;
+  text-align: center;
+  margin: 60px 0 45px;
+  text-shadow: 0 2px 6px rgba($white, 0.45);
+}
+
+// --------------------
+// Карточки
+// --------------------
+.card {
+  @include fade();
+
+  &.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+    svg {
+      transform: scale(1.15);
+    }
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+// --------------------
+// Маленькие карточки
+// --------------------
+.card-small {
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    height: 340px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .card-footer {
+    background-color: $dark-1;
+    border-top: 1px solid $dark-2;
+  }
+}
+
+// --------------------
+// Логотипы компаний
+// --------------------
+.big-tech-logo {
+  width: 240px;
+  opacity: 0;
+  transform: scale(0.85) translateY(15px);
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.4s ease;
+
+  &.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  &.meta:hover {
+    @include logo-hover(rgba(0, 150, 255, 0.7), -2deg);
+  }
+
+  &.apple:hover {
+    @include logo-hover(rgba(255, 255, 255, 0.9), -2deg);
+  }
+
+  &.amazon:hover {
+    @include logo-hover(rgba(255, 153, 0, 0.8));
+  }
+
+  &.netflix:hover {
+    @include logo-hover(rgba(255, 0, 0, 0.8), 2deg);
+  }
+
+  &.google:hover {
+    filter:
+      drop-shadow(0 0 10px rgba(66, 133, 244, 0.4)) drop-shadow(0 0 10px rgba(234, 67, 53, 0.4)) drop-shadow(0 0 10px rgba(251, 188, 5, 0.4)) drop-shadow(0 0 10px rgba(52, 168, 83, 0.4));
+    transform: scale(1.15) rotate(2deg);
+  }
+}
+
+// --------------------
+// Логотип в центре
+// --------------------
+.logo-section {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.center-logo {
+  width: 100%;
+  max-width: 350px;
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.5s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 14px rgba(77, 166, 255, 0.7));
+    transform: scale(1.05);
+  }
+}
+
+// --------------------
+// Footer
+// --------------------
+.footer-dark {
+  background-color: #0d0d0d;
+  color: $gray-1;
+  border-top: 1px solid #222;
+
+  .footer-links {
+    font-size: 1.05rem;
+  }
+
+  .footer-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+
+    &:hover {
+      color: $white;
+      text-shadow: 0 0 6px rgba($white, 0.6);
+    }
+  }
+
+  .separator {
+    margin: 0 8px;
+    color: #555;
+  }
+
+  .footer-email {
+    color: $gray-2;
+    font-size: 0.95rem;
+  }
+
+  .footer-copy {
+    color: $gray-3;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Courses>
+
+    <Course id="cpp">
+        <title>C/C++ — фундамент программирования</title>
+        <image>images/cpp.png</image>
+        <description>
+            Освой мощные и высокопроизводительные языки, на которых строятся операционные
+            системы, игровые движки и критически важные приложения. C/C++ развивает глубокое
+            понимание
+            работы памяти, алгоритмов и архитектуры, формируя сильный технический фундамент для
+            любой
+            IT‑карьеры.
+        </description>
+        <updated>Last updated 3 mins ago</updated>
+        <link>html/cpp.html</link>
+    </Course>
+
+    <Course id="java">
+        <title>Java — стабильность и масштабируемость</title>
+        <image>images/jar.jpg</image>
+        <description>
+            Один из самых востребованных языков в мире, используемый в банковских системах,
+            корпоративных приложениях и Android‑разработке. Java сочетает надёжность, строгую
+            структуру и
+            огромную экосистему, что делает её идеальным выбором для серьёзных проектов.
+        </description>
+        <updated>Last updated 3 mins ago</updated>
+        <link>html/java.html</link>
+    </Course>
+
+    <Course id="python">
+        <title>Python — простота и мощь</title>
+        <image>images/py.jpg</image>
+        <description>
+            Универсальный язык для новичков и профессионалов: от веб‑разработки до анализа
+            данных и искусственного интеллекта. Python позволяет быстро создавать прототипы,
+            автоматизировать задачи и работать с современными технологиями благодаря огромному
+            количеству
+            библиотек.
+        </description>
+        <updated>Last updated 3 mins ago</updated>
+        <link>html/python.html</link>
+    </Course>
+
+</Courses>

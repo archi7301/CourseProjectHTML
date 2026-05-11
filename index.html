@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLearn</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/index_adaptation.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция преимуществ -->
+        <section class="advantages-section">
+            <h1>Почему выбирают именно CodeLearn?</h1>
+            <div class="row g-4 justify-content-center" id="advantages"></div>
+        </section>
+
+        <!-- Секция с компаниями-партнерами -->
+        <hr>
+        <section class="partners-section">
+            <h1>Мы работаем с ведущими технологическими компаниями Big-Tech</h1>
+            <hr>
+
+            <div class="container text-center my-4">
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+
+                    <a href="https://about.meta.com/" target="_blank">
+                        <img src="images/meta.png" alt="Meta" class="big-tech-logo meta">
+                    </a>
+
+                    <a href="https://apple.com" target="_blank">
+                        <img src="images/apple.png" alt="Apple" class="big-tech-logo apple">
+                    </a>
+
+                    <a href="https://amazon.com" target="_blank">
+                        <img src="images/amazon.png" alt="Amazon" class="big-tech-logo amazon">
+                    </a>
+
+                    <a href="https://netflix.com" target="_blank">
+                        <img src="images/netflix.png" alt="Netflix" class="big-tech-logo netflix">
+                    </a>
+
+                    <a href="https://google.com" target="_blank">
+                        <img src="images/google.png" alt="Google" class="big-tech-logo google">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с курсами -->
+        <section class="courses-section">
+            <h2 class="visually-hidden">...</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="home-courses"></div>
+        </section>
+
+        <!-- Блок с логотипом -->
+        <div class="logo-section my-5">
+            <img src="images/codelearn.png" alt="CodeLearn Logo" class="center-logo">
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/load_home.js"></script>
+    <script src="js/load_header.js"></script>
+    <script src="js/load_footer.js"></script>
+    <script src="js/load_home_advantages.js"></script>
+</body>
+
+</html>

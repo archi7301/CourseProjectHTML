@@ -1,0 +1,23 @@
+@media (max-width: 992px) {
+    h1 {
+        font-size: 48px;
+        margin-top: 50px;
+    }
+}
+
+/* Малые планшеты / большие телефоны */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 45px;
+        margin-bottom: -50px;
+    }
+}

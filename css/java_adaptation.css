@@ -1,0 +1,16 @@
+/* Адаптация заголовка */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 48px;
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+}

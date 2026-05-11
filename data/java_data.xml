@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Courses>
+
+    <Course id="java-basic">
+        <title>Java Basic — основы языка и платформы</title>
+        <image>../images/java_basic.png</image>
+        <description>
+            Java Basic — это фундаментальный модуль, который формирует прочное
+            понимание синтаксиса Java, работы с классами и объектами, типами данных, условиями,
+            циклами и базовыми принципами ООП.
+            Вы разберётесь, как работает JVM, что такое байткод, как Java управляет памятью и почему
+            язык остаётся стандартом для промышленной разработки.
+            После прохождения модуля вы сможете уверенно писать простые программы и понимать
+            ключевые механизмы платформы.
+        </description>
+        <updated>Last updated 3 weeks ago</updated>
+        <link>https://www.youtube.com/watch?v=23HFxAPyJ9U&amp;t=41s</link>
+    </Course>
+
+    <Course id="java-practice">
+        <title>Java Practice — уверенная разработка и реальные задачи</title>
+        <image>../images/java_practice.png</image>
+        <description>
+            Java Practice — практический модуль, направленный на закрепление
+            навыков разработки.
+            Вы освоите коллекции, generics, обработку исключений, работу с файлами, потоками
+            ввода‑вывода и основами многопоточности.
+            Особое внимание уделено структуре проекта, чистому коду, отладке и инструментам JVM.
+            Этот этап помогает перейти от теории к самостоятельной разработке и подготовке к
+            backend‑проектам.
+        </description>
+        <updated>Last updated 3 weeks ago</updated>
+        <link>
+            https://www.youtube.com/watch?v=WsUuqlTgBK0&amp;list=PLwiuaDJVNC9Cmiw-i9pO668GII1FNuoUP</link>
+    </Course>
+
+    <Course id="java-pro">
+        <title>Java Pro — архитектура, производительность и современные
+            технологии</title>
+        <image>../images/java_pro.png</image>
+        <description>
+            Java Pro — продвинутый модуль для тех, кто хочет писать масштабируемые,
+            надёжные и оптимизированные приложения.
+            Вы изучите многопоточность, параллелизм, Stream API, лямбда‑выражения, работу сборщика
+            мусора, основы JVM‑оптимизации и архитектурные подходы.
+            Модуль включает современные технологии: Spring Boot, Spring Data, Maven, Docker, Git,
+            JUnit.
+            Этот курс формирует навыки, необходимые для enterprise‑разработки и серьёзных
+            технических собеседований.
+        </description>
+        <updated>Last updated 3 weeks ago</updated>
+        <link>
+            https://www.youtube.com/watch?v=BGTx91t8q50&amp;list=PLsyeobzWxl7q6oUFts2erdot6jxF_lisP</link>
+    </Course>
+
+</Courses>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pricing>
+
+    <Plan id="basic">
+        <title>Basic</title>
+        <price>0$ / per month / active ✔️</price>
+        <image>../images/basic.png</image>
+
+        <Feature>Краткое ознакомление с платформой 🌐</Feature>
+        <Feature>Доступ только к базовому курсу C/C++ 📝</Feature>
+        <Feature>Ограниченный материал в рамках курса ✂️</Feature>
+
+        <buttonLink>../index.html</buttonLink>
+        <buttonText>Начать обучение</buttonText>
+    </Plan>
+
+    <Plan id="pro">
+        <title>Pro</title>
+        <price>29$ / per month</price>
+        <image>../images/pro.png</image>
+
+        <Feature>Доступ к продвинутым курсам ⚡️</Feature>
+        <Feature>Персональный ИИ-наставник 🤖</Feature>
+        <Feature>Сертификат об окончании курса 📜</Feature>
+
+        <buttonLink>#</buttonLink>
+        <buttonText>Перейти к покупке</buttonText>
+    </Plan>
+
+</Pricing>
